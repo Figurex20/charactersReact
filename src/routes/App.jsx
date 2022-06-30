@@ -1,45 +1,39 @@
-import { useState } from 'react';
-import logo from '../assets/logo.svg';
-import '../styles/App.css';
+import React from 'react';
+import { AppContext } from '../context/AppContext.jsx';
+import { useInitialState } from '../hooks/useInitialState.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+import { Pages } from '../containers/Pages.jsx';
+import { Home } from '../pages/Home.jsx';
+// import { Layout } from '../components/Layout.jsx';
+import { Login } from '../pages/Login.jsx';
+import { Products } from '../pages/Products.jsx';
+import { Product } from '../pages/Product.jsx';
+import { NewProduct } from '../pages/NewProduct.jsx';
+import { Orders } from '../pages/Orders.jsx';
+import { NotFound } from '../pages/NotFound.jsx';
 
 function App() {
-	const [count, setCount] = useState(0);
+	const initialState = useInitialState();
 
 	return (
-		<div className="App">
-			<header className="App-header">
-				<img src={logo} className="App-logo" alt="logo" />
-				<p>Hello Vite + React!</p>
-				<p>
-					<button type="button" onClick={() => setCount((count) => count + 1)}>
-						count is: {count}
-					</button>
-				</p>
-				<p>
-					Edit <code>App.jsx</code> and save to test HMR updates.
-				</p>
-				<p>
-					<a
-						className="App-link"
-						href="https://reactjs.org"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Learn React
-					</a>
-					{' | '}
-					<a
-						className="App-link"
-						href="https://vitejs.dev/guide/features.html"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						Vite Docs
-					</a>
-				</p>
-			</header>
-		</div>
+		<AppContext.Provider value={initialState}>
+			<BrowserRouter basename="/">
+				{/* <Layout> */}
+				<Routes>
+					<Route path="/" element={<Pages />}>
+						<Route index element={<Home />} />
+						<Route path="login" element={<Login />} />
+						<Route path="products" element={<Products />} />
+						<Route path="product" element={<Product />} />
+						<Route path="newproduct" element={<NewProduct />} />
+						<Route path="Orders" element={<Orders />} />
+						<Route path="*" element={<NotFound />} />
+					</Route>
+				</Routes>
+				{/* </Layout> */}
+			</BrowserRouter>
+		</AppContext.Provider>
 	);
 }
-
-export default App;
+export { App };

@@ -1,4 +1,5 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import './seach.scss';
 
 .header {
 	background-image: linear-gradient(
@@ -17,46 +18,4 @@
 		#c456b1
 	);
 	height: 22rem;
-}
-
-.input {
-	background: transparent;
-	color: #191919;
-	padding: 0 1rem;
-	margin-bottom: 0.1rem;
-	width: 27rem;
-	border: 0;
-	&-wrapper {
-		height: 2rem;
-		width: 30rem;
-		margin-top: 1rem;
-		padding: 0 0.5rem;
-		border-top-left-radius: 2rem;
-		border-top-right-radius: 2rem;
-		border-bottom-left-radius: 2rem;
-		border-bottom-right-radius: 2rem;
-		background: #f5f5f5;
-	}
-
-	&-icon {
-		color: #a2a2a2;
-		width: 2rem;
-		height: 1.5rem;
-		right: 61rem;
-		margin-top: 1em;
-		transform: translateY(-50%);
-	}
-	&-icon-primary {
-		color: $primary;
-		width: 2rem;
-		height: 1.5rem;
-		right: 61rem;
-		margin-top: 1em;
-		transform: translateY(-50%);
-	}
-}
-
-.input:focus {
-	outline: none;
-	color: $primary;
 }

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import { Container, Navbar } from 'react-bootstrap';
-import { Search } from './Search';
+import { Search } from '../Search/Search.jsx';
 
 const Layout = () => {
 	return (

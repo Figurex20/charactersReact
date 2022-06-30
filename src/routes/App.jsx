@@ -3,15 +3,14 @@ import { AppContext } from '../context/AppContext.jsx';
 import { useInitialState } from '../hooks/useInitialState.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { Pages } from '../containers/Pages.jsx';
-import { Home } from '../pages/Home.jsx';
-// import { Layout } from '../components/Layout.jsx';
-import { Login } from '../pages/Login.jsx';
-import { Products } from '../pages/Products.jsx';
-import { Product } from '../pages/Product.jsx';
-import { NewProduct } from '../pages/NewProduct.jsx';
-import { Orders } from '../pages/Orders.jsx';
-import { NotFound } from '../pages/NotFound.jsx';
+import { Pages } from '../containers/Pages2/Pages.jsx';
+import { Home } from '../pages/Home/Home.jsx';
+import { Login } from '../pages/Login/Login.jsx';
+import { Products } from '../pages/Products/Products.jsx';
+import { Product } from '../pages/Product/Product.jsx';
+import { NewProduct } from '../pages/NewProduct/NewProduct.jsx';
+import { Orders } from '../pages/Orders/Orders.jsx';
+import { NotFound } from '../pages/NotFound/NotFound.jsx';
 
 function App() {
 	const initialState = useInitialState();

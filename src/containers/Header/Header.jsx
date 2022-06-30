@@ -1,10 +1,8 @@
 import { Link } from 'react-router-dom';
 
-import '../styles/css/bootstrap.css';
-
 const Header = () => {
 	return (
-		<div className="header p-5 text-center">
+		<div className="header p-5 text-start">
 			<h1>Febrero Promocional</h1>
 			<p>Productos selecionados con 33% de descuento</p>
 			<Link to="/product" className="btn bg-light">

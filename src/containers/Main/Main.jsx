@@ -1,7 +1,9 @@
-const Main = () => {
+import { PrintDates } from '../../components/PrintDates/PrintDates';
+
+const Main = ({ characters }) => {
 	return (
 		<div>
-			<h1>Main</h1>
+			<PrintDates />
 		</div>
 	);
 };

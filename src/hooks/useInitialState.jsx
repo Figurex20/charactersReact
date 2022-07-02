@@ -1,25 +1,24 @@
 import { useState } from 'react';
 
 const initialState = {
-	words: [],
-	wordSave: '',
+	characters: [],
+	name: '',
 };
 
 function useInitialState() {
 	const [state, setState] = useState(initialState);
 
-	const addToWord = (payload) => {
+	const setcharacters = (payload) => {
 		setState({
 			...state,
-			words: [...state.words, payload],
-			wordSave: '',
+			characters: payload,
 		});
 	};
 
-	const saveWord = (payload) => {
+	const setname = (payload) => {
 		setState({
 			...state,
-			wordSave: payload,
+			name: payload,
 		});
 	};
 
@@ -33,8 +32,8 @@ function useInitialState() {
 
 	return {
 		state,
-		addToWord,
-		saveWord,
+		setcharacters,
+		setname,
 		removeFromWord,
 	};
 }

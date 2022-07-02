@@ -1,7 +1,8 @@
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-@import './seach.scss';
-
+@import '../components/Search/seach.scss';
+@import '../containers/Header/header.scss';
 .header {
+	height: 22rem;
 	background-image: linear-gradient(
 		to right bottom,
 		#6bd1ba,
@@ -17,5 +18,15 @@
 		#ba4dba,
 		#c456b1
 	);
-	height: 22rem;
+	&_content {
+		margin-top: 5rem;
+	}
+}
+
+.form-input-icon {
+	background: transparent;
+	color: #191919;
+	padding: 0 1rem;
+	margin-bottom: 0.1rem;
+	border: 0;
 }

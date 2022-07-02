@@ -6,15 +6,17 @@
 	width: 27rem;
 	border: 0;
 	&-wrapper {
+		background: #f5f5f5;
+
 		height: 2rem;
 		width: 30rem;
 		margin-top: 1rem;
 		padding: 0 0.5rem;
+
 		border-top-left-radius: 2rem;
 		border-top-right-radius: 2rem;
 		border-bottom-left-radius: 2rem;
 		border-bottom-right-radius: 2rem;
-		background: #f5f5f5;
 	}
 
 	&-icon {

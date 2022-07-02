@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import { Pages } from '../containers/Pages2/Pages.jsx';
 import { Home } from '../pages/Home/Home.jsx';
+import { Layout } from '../components/layout/Layout.jsx';
 import { Login } from '../pages/Login/Login.jsx';
 import { Products } from '../pages/Products/Products.jsx';
 import { Product } from '../pages/Product/Product.jsx';
@@ -18,7 +19,6 @@ function App() {
 	return (
 		<AppContext.Provider value={initialState}>
 			<BrowserRouter basename="/">
-				{/* <Layout> */}
 				<Routes>
 					<Route path="/" element={<Pages />}>
 						<Route index element={<Home />} />
@@ -30,7 +30,6 @@ function App() {
 						<Route path="*" element={<NotFound />} />
 					</Route>
 				</Routes>
-				{/* </Layout> */}
 			</BrowserRouter>
 		</AppContext.Provider>
 	);

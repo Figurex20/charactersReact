@@ -1,7 +1,6 @@
 import { Outlet } from 'react-router-dom';
 import { Layout } from '../../components/layout/Layout.jsx';
-import { useEffect, useContext } from 'react';
-import { AppContext } from '../../context/AppContext';
+import { Footer } from '../../components/Footer/Footer.jsx';
 const Pages = () => {
 	return (
 		<>
@@ -9,6 +8,7 @@ const Pages = () => {
 			<div>
 				<Outlet />
 			</div>
+			<Footer />
 		</>
 	);
 };

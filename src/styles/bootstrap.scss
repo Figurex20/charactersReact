@@ -2,6 +2,7 @@
 @import '../components/Search/seach.scss';
 @import '../containers/Header/header.scss';
 @import '../components/Footer/footer.scss';
+@import '../pages/Login/login.scss';
 
 .form-input-icon {
 	background: transparent;
@@ -9,18 +10,4 @@
 	padding: 0 1rem;
 	margin-bottom: 0.1rem;
 	border: 0;
-}
-
-.login {
-	background: #4f5659;
-	padding: 15rem;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	&-items {
-		width: 63rem;
-		&-control {
-			height: 4rem;
-		}
-	}
 }

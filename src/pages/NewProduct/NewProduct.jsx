@@ -1,9 +1,13 @@
 import React from 'react';
+import { FormNewProduct } from '../../components/FormNewProduct/FormNewProduct';
 
 const NewProduct = () => {
 	return (
-		<div>
-			<h1>NewProduct</h1>
+		<div className="newProduct">
+			<div>
+				<h1 className="text-center">Add New Product</h1>
+				<FormNewProduct />
+			</div>
 		</div>
 	);
 };

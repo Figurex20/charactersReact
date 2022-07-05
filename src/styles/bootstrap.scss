@@ -11,3 +11,19 @@
 	margin-bottom: 0.1rem;
 	border: 0;
 }
+
+.newProduct {
+	background: #4f5659;
+	padding: 7rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&-items {
+		width: 63rem;
+		&-control {
+			height: 4rem;
+		}
+	}
+}

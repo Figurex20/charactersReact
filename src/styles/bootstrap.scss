@@ -10,3 +10,17 @@
 	margin-bottom: 0.1rem;
 	border: 0;
 }
+
+.login {
+	background: #4f5659;
+	padding: 15rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&-items {
+		width: 63rem;
+		&-control {
+			height: 4rem;
+		}
+	}
+}

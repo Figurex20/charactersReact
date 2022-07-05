@@ -1,9 +1,13 @@
-import React from 'react';
+import { FormLogin } from '../../components/FormLogin/FormLogin';
+import { Container, Row } from 'react-bootstrap';
 
 function Login() {
 	return (
-		<div>
-			<h1>login</h1>
+		<div className=" login">
+			<div>
+				<h1 className="text-center">Log in</h1>
+				<FormLogin />
+			</div>
 		</div>
 	);
 }

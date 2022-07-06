@@ -1,5 +1,7 @@
 .header {
+	animation: bg 7s ease infinite;
 	height: 22rem;
+	background-size: 400% 300%;
 	background-image: linear-gradient(
 		to right bottom,
 		#6bd1ba,
@@ -15,7 +17,20 @@
 		#ba4dba,
 		#c456b1
 	);
+	-webkit-animation: bg 7s ease infinite;
 	&_content {
 		margin-top: 5rem;
+	}
+}
+
+@keyframes bg {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
 	}
 }

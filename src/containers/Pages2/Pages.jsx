@@ -6,7 +6,7 @@ const Pages = () => {
 	return (
 		<>
 			<Layout />
-			<div style={{ background: '#4f5659' }}>
+			<div>
 				<Outlet />
 			</div>
 			<Footer />

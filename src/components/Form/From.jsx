@@ -40,7 +40,7 @@ export const From = () => {
 			<input
 				type="text"
 				className="input pe-0"
-				placeholder="Search"
+				placeholder="Search for a character"
 				onFocus={onFocus}
 				onBlur={onBlur}
 				value={nombre}

@@ -9,7 +9,12 @@ export const CaraterSection = (props) => {
 
 	return (
 		<>
-			<div className="text-center fs-2 my-2 bg-info ">{name}</div>
+			<div
+				className="text-center fs-2 my-2 rounded-3 m-2"
+				style={{ boxShadow: '0 0rem 0.2rem 0.3rem' }}
+			>
+				{name}
+			</div>
 			<Container>
 				<Row>
 					{characterList.map((character) => {

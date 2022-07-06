@@ -20,9 +20,9 @@ export const ModalCaracteres = (props) => {
 					</Col>
 					<Col className="mt-3">
 						<h4>Gender: {gender}</h4>
-						<h4>Origin: {origin.name}</h4>
+						<h4>Origin: {origin.name.split(' ')[0]}</h4>
 						<h4>Species: {species}</h4>
-						<h4>Location: {location.name}</h4>
+						<h4>Location: {location.name.split(' ')[0]}</h4>
 						<h4>Status: {status}</h4>
 						<h4>Total episodes: {episode.length}</h4>
 						<h4>Created: {created.slice(0, 10)}</h4>

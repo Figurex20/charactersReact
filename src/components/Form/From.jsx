@@ -36,7 +36,7 @@ export const From = () => {
 	};
 
 	return (
-		<form onSubmit={handleSubmit} className="input-wrapper d-flex">
+		<form onSubmit={handleSubmit} className="input-wrapper d-flex input-search">
 			<input
 				type="text"
 				className="input pe-0"

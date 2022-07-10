@@ -18,7 +18,7 @@ const Main = () => {
 					const selection = [0, 5, 10, 15, 20];
 					const characterList = characters.slice(selection[index], selection[index + 1]);
 					return (
-						<Container className="pb-3">
+						<Container className="pb-3 container-row-characters">
 							<Row>
 								<CaraterSection key={index} name={section} characterList={characterList} />
 							</Row>
@@ -29,9 +29,11 @@ const Main = () => {
 		);
 	} else {
 		return (
-			<>
-				<CaraterSection name={name} characterList={characters} />
-			</>
+			<Container className="pb-3 container-row-characters">
+				<Row>
+					<CaraterSection name={name} characterList={characters} />
+				</Row>
+			</Container>
 		);
 	}
 };

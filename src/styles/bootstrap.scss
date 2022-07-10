@@ -30,3 +30,90 @@
 .card-button {
 	width: 10rem;
 }
+
+@media screen and (max-width: 768px) {
+	.input-layout {
+		width: 8rem;
+	}
+	.input-search {
+		width: 20rem;
+	}
+
+	.row-block {
+		display: block;
+		&_links {
+			text-align: center !important;
+		}
+	}
+}
+
+@media screen and (max-width: 426px) {
+	.container-form_search,
+	.cotainer-search-link,
+	.container-navbar {
+		display: block !important;
+	}
+	.container-navbar {
+		position: static !important;
+	}
+	.input-layout {
+		margin-top: 1rem;
+	}
+	.header_content {
+		margin: 0 auto !important;
+	}
+	.container {
+		width: 100% !important;
+	}
+	.container-row-characters {
+		padding: 2rem !important;
+		margin: 0 !important;
+	}
+	.card {
+		width: 20rem !important;
+		height: 22rem !important;
+	}
+	.card-button-styles {
+		margin: 1rem !important;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.container-navbar {
+		position: static !important;
+	}
+	.input-search {
+		width: 19rem;
+	}
+	.header_content {
+		margin: 0 auto !important;
+	}
+	.grupo-caracter {
+		width: 17.5rem !important;
+	}
+	.container-row-characters {
+		padding: 2rem !important;
+		margin: 0 !important;
+	}
+	.card {
+		width: 16rem !important;
+		height: 22rem !important;
+		margin: 0 auto !important;
+		margin-bottom: 1rem !important;
+	}
+	.card-button-styles {
+		margin: 1rem !important;
+	}
+	.card-modal {
+		&-container {
+			width: 20rem !important;
+		}
+
+		&-img {
+			width: 17rem !important;
+		}
+	}
+	#root {
+		width: 21rem !important;
+	}
+}

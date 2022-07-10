@@ -10,7 +10,7 @@ export const CaraterSection = (props) => {
 	return (
 		<>
 			<div
-				className="text-center fs-2 my-2 rounded-3 m-2"
+				className="text-center fs-2 my-2 rounded-3 m-2 grupo-caracter"
 				style={{ boxShadow: '0 0rem 0.2rem 0.3rem' }}
 			>
 				{name}

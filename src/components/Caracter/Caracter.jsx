@@ -48,7 +48,7 @@ export const Caracter = (props) => {
 							{`See All ${name.split(' ')[0]}`}
 						</Button>
 						<Button
-							className="card-button mt-2 w-auto"
+							className="card-button mt-2 w-auto card-button-styles"
 							variant="primary"
 							onClick={() => setModalShow(true)}
 						>

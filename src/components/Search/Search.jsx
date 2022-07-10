@@ -10,8 +10,8 @@ const Search = () => {
 		setname('');
 	};
 	return (
-		<div className="d-flex col-10">
-			<Link to="/" onClick={handleClick} className="navbar-brand btn bg-transparent vw-50 ms-1">
+		<div className="d-flex col-10 container-form_search">
+			<Link to="/" onClick={handleClick} className="navbar-brand btn bg-transparent vw-50 ms-1 ">
 				<img src={Logo} alt="logo-header" />
 			</Link>
 			<From />

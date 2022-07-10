@@ -9,14 +9,20 @@ export const ModalCaracteres = (props) => {
 		props.character;
 
 	return (
-		<Modal {...props} size="lg" aria-labelledby="contained-modal-title-vcenter" centered>
+		<Modal
+			{...props}
+			size="lg"
+			aria-labelledby="contained-modal-title-vcenter"
+			centered
+			className="card-modal-container"
+		>
 			<Modal.Header closeButton>
 				<Modal.Title id="contained-modal-title-vcenter">{name}</Modal.Title>
 			</Modal.Header>
 			<Modal.Body>
 				<Row>
 					<Col>
-						<img src={image} alt="" />
+						<img src={image} alt="" className="card-modal-img" />
 					</Col>
 					<Col className="mt-3">
 						<h4>Gender: {gender}</h4>

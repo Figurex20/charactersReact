@@ -13,7 +13,7 @@ export const Footer = () => {
 		<>
 			<footer className="laboral bg-dark ">
 				<Container className="p-5">
-					<Row>
+					<Row className="row-block">
 						<Col>
 							<Link to="/" className="navbar-brand btn bg-transparent vw-50 ms-1">
 								<img src={Logo} alt="logo-header" />
@@ -21,20 +21,20 @@ export const Footer = () => {
 						</Col>
 						<Col>
 							<Row>
-								<Link to="/" className=" btn bg-transparent text-light text-start">
+								<Link to="/" className=" btn bg-transparent text-light text-start row-block_links">
 									About us
 								</Link>
-								<Link to="/" className=" btn bg-transparent text-light text-start">
-									Privacy Policy
-								</Link>
-								<Link to="/" className=" btn bg-transparent text-light text-start">
+								<Link to="/" className=" btn bg-transparent text-light text-start row-block_links">
 									Our shops
 								</Link>
-								<Link to="/" className=" btn bg-transparent text-light text-start">
-									I want to be a franchisee
+								<Link to="/" className=" btn bg-transparent text-light text-start row-block_links">
+									Privacy Policy
 								</Link>
-								<Link to="/" className=" btn bg-transparent text-light text-start">
+								<Link to="/" className=" btn bg-transparent text-light text-start row-block_links">
 									Advertise here
+								</Link>
+								<Link to="/" className=" btn bg-transparent text-light text-start row-block_links">
+									I want to be a franchisee
 								</Link>
 							</Row>
 						</Col>
